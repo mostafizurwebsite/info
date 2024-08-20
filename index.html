@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafizur Rahman's Profile</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header-container {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            word-break: break-word;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            margin: 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        #language-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        #language-toggle:hover {
+            background-color: #1c598a;
+        }
+
+        /* Section Styles */
+        .content-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #2980b9;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            text-align: left;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        .card-item {
+            margin: 10px 0;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .card .email-text {
+            word-break: break-all;
+        }
+
+        .card a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #1abc9c;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container h1 {
+                font-size: 2em;
+            }
+
+            .header-container nav ul {
+                flex-direction: column;
+            }
+
+            .content-section h2 {
+                font-size: 1.5em;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            #language-toggle {
+                top: 10px;
+                right: 10px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container h1 {
+                font-size: 1.5em;
+            }
+
+            #language-toggle {
+                padding: 8px 12px;
+                font-size: 0.8em;
+            }
+
+            .card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mostafizur Rahman's Profile</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#social">Social</a></li>
+                </ul>
+            </nav>
+            <button id="language-toggle">বাংলা</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2 id="about-heading">Basic Information</h2>
+            <div class="card">
+                <div class="card-item"><strong id="name-label">Name:</strong> MD Mostafizur Rahman</div>
+                <div class="card-item"><strong id="dob-label">Date of Birth:</strong> 03/09/2006</div>
+                <div class="card-item"><strong id="address-label">Address:</strong> Kapasia, Gazipur, Dhaka, Bangladesh</div>
+                <div class="card-item"><strong id="phone-label">Phone Number:</strong> 01405985541, 09638223752</div>
+                <div class="card-item"><strong id="email-label">Email:</strong> <span class="email-text">mdmostafizur45845@gmail.com</span></div>
+            </div>
+        </section>
+
+        <section id="education" class="content-section">
+            <h2 id="education-heading">Educational Background</h2>
+            <div class="card">
+                <div class="card-item" id="education-info">Currently studying Textile Engineering at BIST.</div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2 id="skills-heading">Technical Skills</h2>
+            <div class="card">
+                <div class="card-item" id="skills-info">Proficient in community management, HTML, CSS, and JavaScript coding.</div>
+            </div>
+        </section>
+
+        <section id="interests" class="content-section">
+            <h2 id="interests-heading">Personal Interests & Hobbies</h2>
+            <div class="card">
+                <div class="card-item" id="interests-info">I enjoy gaming, my favorite games are Free Fire and other action games. I also love traveling.</div>
+            </div>
+        </section>
+
+        <section id="social" class="content-section">
+            <h2 id="social-heading">Social Media Links</h2>
+            <div class="card">
+                <div class="card-item"><strong id="facebook-label">Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61560304905583" target="_blank">Facebook Profile</a></div>
+                <div class="card-item"><strong id="tiktok-label">TikTok:</strong> @attitude_boy_5022</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mostafizur Rahman. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const languageToggle = document.getElementById('language-toggle');
+            let isEnglish = true;
+
+            languageToggle.addEventListener('click', function () {
+                isEnglish = !isEnglish;
+                languageToggle.textContent = isEnglish ? 'বাংলা' : 'English';
+
+                document.getElementById('about-heading').textContent = isEnglish ? 'Basic Information' : 'মৌলিক তথ্য';
+                document.getElementById('name-label').textContent = isEnglish ? 'Name:' : 'নাম:';
+                document.getElementById('dob-label').textContent = isEnglish ? 'Date of Birth:' : 'জন্ম তারিখ:';
+                document.getElementById('address-label').textContent = isEnglish ? 'Address:' : 'ঠিকানা:';
+                document.getElementById('phone-label').textContent = isEnglish ? 'Phone Number:' : 'ফোন নম্বর:';
+                document.getElementById('email-label').textContent = isEnglish ? 'Email:' : 'ইমেইল:';
+
+                document.getElementById('education-heading').textContent = isEnglish ? 'Educational Background' : 'শিক্ষাগত পটভূমি';
+                document.getElementById('education-info').textContent = isEnglish ? 'Currently studying Textile Engineering at BIST.' : 'বর্তমানে BIST-এ টেক্সটাইল ইঞ্জিনিয়ারিং পড়ছি।';
+
+                document.getElementById('skills-heading').textContent = isEnglish ? 'Technical Skills' : 'প্রযুক্তিগত দক্ষতা';
+                document.getElementById('skills-info').textContent = isEnglish ? 'Proficient in community management, HTML, CSS, and JavaScript coding.' : 'কমিউনিটি ম্যানেজমেন্ট, HTML, CSS এবং JavaScript কোডিংয়ে দক্ষ।';
+
+                document.getElementById('interests-heading').textContent = isEnglish ? 'Personal Interests & Hobbies' : 'ব্যক্তিগত আগ্রহ ও শখ';
+                document.getElementById('interests-info').textContent = isEnglish ? 'I enjoy gaming, my favorite games are Free Fire and other action games. I also love traveling.' : 'আমি গেমিং পছন্দ করি, আমার প্রিয় গেমগুলি হলো ফ্রি ফায়ার এবং অন্যান্য অ্যাকশন গেম। আমি ভ্রমণও ভালোবাসি।';
+
+                document.getElementById('social-heading').textContent = isEnglish ? 'Social Media Links' : 'সামাজিক মাধ্যমের লিংক';
+                document.getElementById('facebook-label').textContent = isEnglish ? 'Facebook:' : 'ফেসবুক:';
+                document.getElementById('tiktok-label').textContent = isEnglish ? 'TikTok:' : 'টিকটক:';
+            });
+        });
+    </script>
+</body>
+</html>
